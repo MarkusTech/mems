@@ -245,6 +245,85 @@
 	$query2 = "SELECT * FROM tblincidentlist WHERE barangay = 'Upper Labay' AND incident = 'Landslide'";
 	$result2 = $conn->query($query2);
 	$LandslideUpperlabay = $result2->num_rows;
+
+	// $query2 = "SELECT * FROM tblincidentlist WHERE barangay = 'Apopong' AND incident = 'Vehicular'";
+	// $result2 = $conn->query($query2);
+	// $VehicularVehicularApopong = $result2->num_rows;
+	// $query2 = "SELECT * FROM tblincidentlist WHERE barangay = 'Baluan' AND incident = 'Vehicular'";
+	// $result2 = $conn->query($query2);
+	// $VehicularVehicularBaluan = $result2->num_rows;
+	// $query2 = "SELECT * FROM tblincidentlist WHERE barangay = 'Batomelong' AND incident = 'Vehicular'";
+	// $result2 = $conn->query($query2);
+	// $VehicularVehicularBatomelong = $result2->num_rows;
+	// $query2 = "SELECT * FROM tblincidentlist WHERE barangay = 'Buayan' AND incident = 'Vehicular'";
+	// $result2 = $conn->query($query2);
+	// $VehicularVehicularBuayan = $result2->num_rows;
+	// $query2 = "SELECT * FROM tblincidentlist WHERE barangay = 'Bula' AND incident = 'Vehicular'";
+	// $result2 = $conn->query($query2);
+	// $VehicularVehicularBula = $result2->num_rows;
+	// $query2 = "SELECT * FROM tblincidentlist WHERE barangay = 'Calumpang' AND incident = 'Vehicular'";
+	// $result2 = $conn->query($query2);
+	// $VehicularVehicularCalumpang = $result2->num_rows;
+	// $query2 = "SELECT * FROM tblincidentlist WHERE barangay = 'City Heights' AND incident = 'Vehicular'";
+	// $result2 = $conn->query($query2);
+	// $VehicularVehicularCityheights = $result2->num_rows;
+	// $query2 = "SELECT * FROM tblincidentlist WHERE barangay = 'Conel' AND incident = 'Vehicular'";
+	// $result2 = $conn->query($query2);
+	// $VehicularVehicularConel = $result2->num_rows;
+	// $query2 = "SELECT * FROM tblincidentlist WHERE barangay = 'Dadiangas East' AND incident = 'Vehicular'";
+	// $result2 = $conn->query($query2);
+	// $VehicularVehicularDadeast = $result2->num_rows;
+	// $query2 = "SELECT * FROM tblincidentlist WHERE barangay = 'Dadiangas North' AND incident = 'VehicularVehicular'";
+	// $result2 = $conn->query($query2);
+	// $VehicularVehicularDadnorth = $result2->num_rows;
+	// $query2 = "SELECT * FROM tblincidentlist WHERE barangay = 'Dadiangas South' AND incident = 'Vehicular'";
+	// $result2 = $conn->query($query2);
+	// $VehicularVehicularDadsouth = $result2->num_rows;
+	// $query2 = "SELECT * FROM tblincidentlist WHERE barangay = 'Dadiangas West' AND incident = 'Vehicular'";
+	// $result2 = $conn->query($query2);
+	// $VehicularVehicularDadwest = $result2->num_rows;
+	// $query2 = "SELECT * FROM tblincidentlist WHERE barangay = 'Fatima' AND incident = 'Vehicular'";
+	// $result2 = $conn->query($query2);
+	// $VehicularVehicularFatima = $result2->num_rows;
+	// $query2 = "SELECT * FROM tblincidentlist WHERE barangay = 'Katangawan' AND incident = 'Vehicular'";
+	// $result2 = $conn->query($query2);
+	// $VehicularVehicularKatangawan = $result2->num_rows;
+	// $query2 = "SELECT * FROM tblincidentlist WHERE barangay = 'Labangal' AND incident = 'Vehicular'";
+	// $result2 = $conn->query($query2);
+	// $VehicularVehicularLabangal = $result2->num_rows;
+	// $query2 = "SELECT * FROM tblincidentlist WHERE barangay = 'Lagao' AND incident = 'Vehicular'";
+	// $result2 = $conn->query($query2);
+	// $VehicularVehicularLagao = $result2->num_rows;
+	// $query2 = "SELECT * FROM tblincidentlist WHERE barangay = 'Ligaya' AND incident = 'Vehicular";
+	// $result2 = $conn->query($query2);
+	// $VehicularLigaya = $result2->num_rows;
+	// $query2 = "SELECT * FROM tblincidentlist WHERE barangay = 'Mabuhay' AND incident = 'Vehicular'";
+	// $result2 = $conn->query($query2);
+	// $VehicularVehicularMabuhay = $result2->num_rows;
+	// $query2 = "SELECT * FROM tblincidentlist WHERE barangay = 'Olympog' AND incident = 'Vehicular'";
+	// $result2 = $conn->query($query2);
+	// $VehicularVehicularOlympog = $result2->num_rows;
+	// $query2 = "SELECT * FROM tblincidentlist WHERE barangay = 'San Isidro' AND incident = 'Vehicular'";
+	// $result2 = $conn->query($query2);
+	// $VehicularVehicularSanisidro = $result2->num_rows;
+	// $query2 = "SELECT * FROM tblincidentlist WHERE barangay = 'San Jose' AND incident = 'Vehicular'";
+	// $result2 = $conn->query($query2);
+	// $VehicularVehicularSanjose = $result2->num_rows;
+	// $query2 = "SELECT * FROM tblincidentlist WHERE barangay = 'Siguel' AND incident = 'Vehicular'";
+	// $result2 = $conn->query($query2);
+	// $VehicularVehicularSiguel = $result2->num_rows;
+	// $query2 = "SELECT * FROM tblincidentlist WHERE barangay = 'Sinawal' AND incident = 'Vehicular'";
+	// $result2 = $conn->query($query2);
+	// $VehicularVehicularSinawal = $result2->num_rows;
+	// $query2 = "SELECT * FROM tblincidentlist WHERE barangay = 'Tambler' AND incident = 'Vehicular'";
+	// $result2 = $conn->query($query2);
+	// $VehicularVehicularTambler = $result2->num_rows;
+	// $query2 = "SELECT * FROM tblincidentlist WHERE barangay = 'Tinagacan' AND incident = 'Vehicular'";
+	// $result2 = $conn->query($query2);
+	// $VehicularVehicularTinagacan = $result2->num_rows;
+	// $query2 = "SELECT * FROM tblincidentlist WHERE barangay = 'Upper Labay' AND incident = 'Vehicular'";
+	// $result2 = $conn->query($query2);
+	// $VehicularVehicularUpperlabay = $result2->num_rows;
 ?>
 
 <!DOCTYPE html>
@@ -320,10 +399,10 @@
             										label: 'Fire Incident',
             										data: [<?= number_format($FireApopong) ?>, <?= number_format($FireBaluan) ?>, <?= number_format($FireBatomelong) ?>, <?= number_format($FireBuayan) ?>, <?= number_format($FireBula) ?>, <?= number_format($FireCalumpang) ?>, <?= number_format($FireCityheights) ?>, <?= number_format($FireConel) ?>, <?= number_format($FireDadeast) ?>, <?= number_format($FireDadnorth) ?>, <?= number_format($FireDadsouth) ?>, <?= number_format($FireDadwest) ?>, <?= number_format($FireFatima) ?>, <?= number_format($FireKatangawan) ?>, <?= number_format($FireLabangal) ?>, <?= number_format($FireLagao) ?>, <?= number_format($FireLigaya) ?>, <?= number_format($FireMabuhay) ?>, <?= number_format($FireOlympog) ?>, <?= number_format($FireSanisidro) ?>, <?= number_format($FireSanjose) ?>, <?= number_format($FireSiguel) ?>, <?= number_format($FireSinawal) ?>, <?= number_format($FireTambler) ?>, <?= number_format($FireTinagacan) ?>, <?= number_format($FireUpperlabay) ?>],
             										backgroundColor: [
-                										'rgba(3,44,98,255)'
+                										'rgb(232, 24, 24)'
             										],
             										borderColor: [
-                										'rgba(3,44,98,255)'
+                										'rgb(232, 24, 24)'
             											],
             											borderWidth: 1
         											}]
@@ -341,6 +420,7 @@
 							</div>
 						</div>
 					</div>
+					
 					<div>
   						<canvas id="myChart2"></canvas>
 					</div>
@@ -359,10 +439,10 @@
             										label: 'Flood Incident',
             										data: [<?= number_format($FloodApopong) ?>, <?= number_format($FloodBaluan) ?>, <?= number_format($FloodBatomelong) ?>, <?= number_format($FloodBuayan) ?>, <?= number_format($FloodBula) ?>, <?= number_format($FloodCalumpang) ?>, <?= number_format($FloodCityheights) ?>, <?= number_format($FloodConel) ?>, <?= number_format($FloodDadeast) ?>, <?= number_format($FloodDadnorth) ?>, <?= number_format($FloodDadsouth) ?>, <?= number_format($FloodDadwest) ?>, <?= number_format($FloodFatima) ?>, <?= number_format($FloodKatangawan) ?>, <?= number_format($FloodLabangal) ?>, <?= number_format($FloodLagao) ?>, <?= number_format($FFloodLigaya) ?>, <?= number_format($FloodMabuhay) ?>, <?= number_format($FloodOlympog) ?>, <?= number_format($FloodSanisidro) ?>, <?= number_format($FloodSanjose) ?>, <?= number_format($FloodSiguel) ?>, <?= number_format($FloodSinawal) ?>, <?= number_format($FloodTambler) ?>, <?= number_format($FloodTinagacan) ?>, <?= number_format($FloodUpperlabay) ?>],
             										backgroundColor: [
-                										'rgba(3,44,98,255)'
+                										'rgb(14, 136, 229)'
             										],
             										borderColor: [
-                										'rgba(3,44,98,255)'
+                										'rgb(14, 136, 229)'
             											],
             											borderWidth: 1
         											}]
@@ -398,10 +478,10 @@
             										label: 'Landslide Incident',
             										data: [<?= number_format($LandslideApopong) ?>, <?= number_format($LandslideBaluan) ?>, <?= number_format($LandslideBatomelong) ?>, <?= number_format($LandslideBuayan) ?>, <?= number_format($LandslideBula) ?>, <?= number_format($LandslideCalumpang) ?>, <?= number_format($LandslideCityheights) ?>, <?= number_format($LandslideConel) ?>, <?= number_format($LandslideDadeast) ?>, <?= number_format($LandslideDadnorth) ?>, <?= number_format($LandslideDadsouth) ?>, <?= number_format($LandslideDadwest) ?>, <?= number_format($LandslideFatima) ?>, <?= number_format($LandslideKatangawan) ?>, <?= number_format($LandslideLabangal) ?>, <?= number_format($LandslideLagao) ?>, <?= number_format($FLandslideLigaya) ?>, <?= number_format($LandslideMabuhay) ?>, <?= number_format($LandslideOlympog) ?>, <?= number_format($LandslideSanisidro) ?>, <?= number_format($LandslideSanjose) ?>, <?= number_format($LandslideSiguel) ?>, <?= number_format($LandslideSinawal) ?>, <?= number_format($LandslideTambler) ?>, <?= number_format($LandslideTinagacan) ?>, <?= number_format($LandslideUpperlabay) ?>],
             										backgroundColor: [
-                										'rgba(3,44,98,255)'
+                										'rgb(28, 204, 15)'
             										],
             										borderColor: [
-                										'rgba(3,44,98,255)'
+                										'rgb(28, 204, 15)'
             											],
             											borderWidth: 1
         											}]
@@ -419,8 +499,11 @@
 							</div>
 						</div>
 					</div>
+
 					
 				</div>
+
+				
 				<!-- Main Footer -->
 			<?php include 'templates/main-footer.php' ?>
 			<!-- End Main Footer -->
