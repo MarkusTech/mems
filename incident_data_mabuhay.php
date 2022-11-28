@@ -533,6 +533,7 @@
 													<th scope="col">Amount Damage</th>
 													<th scope="col">H. Status</th>
 													<th scope="col">Barangay</th>
+                                                    <th scope="col">Incident</th>
                                                     <?php if($_SESSION['role']=='administrator'):?>
 														<th>Action</th>
 													<?php endif?>
@@ -561,6 +562,7 @@
 															<td><?= $row['amountdamage'] ?></td>
 															<td><?= $row['housingstatus'] ?></td>
 															<td><?= $row['barangay'] ?></td>
+                                                            <td><?= $row['incident'] ?></td>
 															<?php if(isset($_SESSION['username'])):?>
 																<td>
 																	<?php if($_SESSION['role']=='administrator'):?>
