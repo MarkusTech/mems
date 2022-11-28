@@ -153,7 +153,7 @@
                                     <div class="row">
                                     	<div class="col">
                                             <div class="form-group">
-                                                <label>Residence Tel. No.: *</label>
+                                                <label>Residence Tel. No.: </label>
                                                 <input type="text" class="form-control" placeholder="Enter Contact Number" name="numbers">
                                             </div>
                                         </div>
@@ -212,13 +212,13 @@
                                     <div class="row">
                                     	<div class="col">
                                             <div class="form-group">
-                                                <label>Color of the Eyes: *</label>
+                                                <label>Color of the Eyes: </label>
                                                 <input type="text" class="form-control" placeholder="Enter Color of the Eyes" name="eyescolor">
                                             </div>
                                         </div>
                                         <div class="col">
                                             <div class="form-group">
-                                                <label>Color of Hair: *</label>
+                                                <label>Color of Hair: </label>
                                                 <input type="text" class="form-control" placeholder="Enter Color of Hair" name="haircolor">
                                             </div>
                                         </div>
@@ -226,13 +226,13 @@
                                     <div class="row">
                                     	<div class="col">
                                             <div class="form-group">
-                                                <label>Complexion: *</label>
+                                                <label>Complexion: </label>
                                                 <input type="text" class="form-control" placeholder="Enter Complexion" name="complexion">
                                             </div>
                                         </div>
                                         <div class="col">
                                             <div class="form-group">
-                                                <label>Identifying Marks: *</label>
+                                                <label>Identifying Marks: </label>
                                                 <input type="text" class="form-control" placeholder="Enter Blood Type" name="imarks">
                                             </div>
                                         </div>
@@ -240,7 +240,7 @@
                                     <div class="row">
                                     	<div class="col">
                                             <div class="form-group">
-                                                <label>Build: *</label>
+                                                <label>Build: </label>
                                                 <input type="text" class="form-control" placeholder="Enter Build" name="build">
                                             </div>
                                         </div>
@@ -266,7 +266,7 @@
                                         </div>
                                         <div class="col">
                                             <div class="form-group">
-                                                <label>TIN Number: *</label>
+                                                <label>TIN Number: </label>
                                                 <input type="number" class="form-control" placeholder="Enter TIN Number" name="tinnumber">
                                             </div>
                                         </div>
@@ -274,7 +274,7 @@
                                     <div class="row">
                                     	<div class="col">
                                             <div class="form-group">
-                                                <label>Office Designation/Position: *</label>
+                                                <label>Office Designation/Position: </label>
                                                 <input type="text" class="form-control" placeholder="Enter Office Designation/Position" name="odp">
                                             </div>
                                         </div>
@@ -282,7 +282,7 @@
                                     <div class="row">
                                     	<div class="col">
                                             <div class="form-group">
-                                                <label>Office Address: *</label>
+                                                <label>Office Address:</label>
                                                 <input type="text" class="form-control" placeholder="Enter Office Address" name="officeAddress">
                                             </div>
                                         </div>
@@ -290,7 +290,7 @@
                                     <div class="row">
                                     	<div class="col">
                                             <div class="form-group">
-                                                <label>Office Tel. No.: *</label>
+                                                <label>Office Tel. No.: </label>
                                                 <input type="text" class="form-control" placeholder="Enter Office Tel. No." name="otn">
                                             </div>
                                         </div>
@@ -304,7 +304,7 @@
                                     <div class="row">
                                     	<div class="col">
                                             <div class="form-group">
-                                                <label>Dialect/Language Spoken: *</label>
+                                                <label>Dialect/Language Spoken: </label>
                                                 <input type="text" class="form-control" placeholder="Enter Dialect/Language Spoken" name="dialect">
                                             </div>
                                         </div>
@@ -312,14 +312,14 @@
                                     <div class="row">
                                     	<div class="col">
                                             <div class="form-group">
-                                                <label>RESCUE/OTHER SKILL ACQUIRED: *</label>
+                                                <label>RESCUE/OTHER SKILL ACQUIRED: </label>
                                                 <input type="text" class="form-control" placeholder="Enter RESCUE/OTHER SKILL ACQUIRED" name="rescue">
                                             </div>
                                         </div>
                                         <div class="col">
                                             <div class="form-group">
-                                                <label>Placed Acquired: *</label>
-                                                <input type="number" class="form-control" placeholder="Enter Placed Acquired" name="placedAcquired">
+                                                <label>Placed Acquired: </label>
+                                                <input type="text" class="form-control" placeholder="Enter Placed Acquired" name="placedAcquired">
                                             </div>
                                         </div>
                                         <div class="col">
@@ -332,14 +332,14 @@
                                     <div class="row">
                                     	<div class="col">
                                             <div class="form-group">
-                                            	<b>References: *</b>
-                                                <label>Name: *</label>
+                                            	<b>References: </b>
+                                                <label>Name: </label>
                                                 <input type="text" class="form-control" placeholder="Enter Name" name="rName">
                                             </div>
                                         </div>
                                         <div class="col">
                                             <div class="form-group">
-                                                <label>Position/Designation: *</label>
+                                                <label>Position/Designation: </label>
                                                 <input type="number" class="form-control" placeholder="Enter Position/Designation" name="rPosition">
                                             </div>
                                         </div>
