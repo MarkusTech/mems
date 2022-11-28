@@ -67,7 +67,10 @@
 											</thead>
 
                                             <?php if($_SESSION['role']=='administrator'):?>
-											<tbody>
+											<tbody>     
+                                                        <tr>
+                                                            <td><a href="incident_data_all.php?state=all">ALL</td></a>
+														</tr>
 														<tr>
 															<td><a href="incident_data_apopong.php?state=apopong">Apopong</td></a>
                                                         </tr>
@@ -143,9 +146,7 @@
                                                         <tr>
                                                             <td><a href="incident_data_upperlabay.php?state=upperlabay">Upper Labay</td></a>
 														</tr>
-                                                        <tr>
-                                                            <td><a href="incident_data_all.php?state=all">ALL</td></a>
-														</tr>
+                                                       
 												<?php else: ?>
 													<tr>
 														<td colspan="6" class="text-center">No Available Data</td>

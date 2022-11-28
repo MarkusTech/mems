@@ -121,7 +121,7 @@
 																		<i class="fa fa-times"></i>
 																	</a>
 																	<?php endif ?>
-																	<a type="button" data-toggle="tooltip" href="incident_data_all.php" class="btn btn-link btn-success">
+																	<a type="button" data-toggle="tooltip" href="incident_data_all.php?state=all" class="btn btn-link btn-success">
 																		Profiles
 																	</a>
 																</td>
