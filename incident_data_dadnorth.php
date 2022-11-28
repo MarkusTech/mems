@@ -768,6 +768,7 @@
                                             </div>
                                         </div>
                                         <div class="col">
+                                        <div class="col">
                                             <div class="form-group">
                                                 <label>Incident: *</label>
                                                     <select class="form-control" name="incident">
@@ -775,6 +776,9 @@
                                                     <option value="Fire">Fire incident</option>
                                                     <option value="Flood">Flood incident</option>
                                                     <option value="Landslide">Landslide incident</option>
+                                                    <option value="Vehicular">Vehicular Accident</option>
+                                                    <option value="BigWaves">Big Waves</option>
+                                                    <option value="Others">Others</option>
                                                 </select>
                                             </div>
                                         </div>
