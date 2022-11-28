@@ -120,7 +120,7 @@
 																	<a type="button" data-toggle="tooltip" href="model/remove_incident.php?id=<?= $row['id'] ?>" onclick="return confirm('Are you sure you want to delete this incident?');" class="btn btn-link btn-danger" data-original-title="Remove">
 																		<i class="fa fa-times"></i>
 																	</a>
-																	<a type="button" data-toggle="tooltip" href="incident_data_all.php?state=all" class="btn btn-link btn-success">
+																	<a type="button" data-toggle="tooltip" href="incident_all_flood.php?state=allflood" class="btn btn-link btn-success">
 																		Profiles
 																	</a>
 																	<?php endif ?>
