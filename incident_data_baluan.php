@@ -1,18 +1,20 @@
 <?php include 'server/server.php' ?>
 <?php 
 
-if($state=='Apopong'){
-    $query = "SELECT * FROM tblincidentlist WHERE barangay = 'Apopong'";
-    $result = $conn->query($query);
-}else{
-    $query = "SELECT * FROM tblincident WHERE barangay = 'baluan'";
-    $result = $conn->query($query);
-}
-
-$incident = array();
-while($row = $result->fetch_assoc()){
-    $incident[] = $row; 
-}
+    $state = $_GET['state'];
+    
+    if($state=='Apopong'){
+        $query = "SELECT * FROM tblincidentlist WHERE barangay = 'Apopong'";
+        $result = $conn->query($query);
+    }else{
+        $query = "SELECT * FROM tblincident WHERE barangay = 'baluan'";
+        $result = $conn->query($query);
+    }
+	
+    $incident = array();
+	while($row = $result->fetch_assoc()){
+		$incident[] = $row; 
+    }
 
 ?>
 <!DOCTYPE html>

@@ -1,72 +1,5 @@
 <?php include 'server/server.php' ?>
 <?php 
-
-    $state = $_GET['state'];
-    
-    if($state=='/mems/incident_data.php?state=apopong'){
-        $query = "SELECT * FROM tblincident WHERE barangay = 'apopong'";
-        $result = $conn->query($query);
-    }elseif($state=='bula'){
-        $query = "SELECT * FROM tblincident WHERE incident = 'bula'";
-        $result = $conn->query($query);
-    }elseif($state=='batomelong'){
-        $query = "SELECT * FROM tblincident WHERE incident = 'batomelong'";
-        $result = $conn->query($query);
-    }elseif($state=='baluan'){
-        $query = "SELECT * FROM tblincident WHERE incident = 'baluan'";
-        $result = $conn->query($query);
-    }elseif($state=='buayan'){
-        $query = "SELECT * FROM tblincident WHERE incident = 'buayan'";
-        $result = $conn->query($query);
-    }elseif($state=='calumpang'){
-        $query = "SELECT * FROM tblincident WHERE incident = 'calumpang'";
-        $result = $conn->query($query);
-    }else{
-        $query = "SELECT * FROM tblincident";
-        $result = $conn->query($query);
-    }
-	
-    $incident = array();
-	while($row = $result->fetch_assoc()){
-		$incident[] = $row; 
-	}
-
-    $query1 = "SELECT * FROM tblbarangay ORDER BY `name`";
-    $result1 = $conn->query($query1);
-
-    $br = array();
-    while($row = $result1->fetch_assoc()){
-        $br[] = $row; 
-    }
-
-    if($state=='fire'){
-        $query2 = "SELECT * FROM tblincidentlist WHERE incident = 'Fire'";
-        $result2 = $conn->query($query2);
-    }elseif($state=='flood'){
-        $query2 = "SELECT * FROM tblincidentlist WHERE incident = 'Flood'";
-        $result2 = $conn->query($query2);
-    }elseif($state=='landslide'){
-        $query2 = "SELECT * FROM tblincidentlist WHERE incident = 'Landslide'";
-        $result2 = $conn->query($query2);
-    }elseif($state=='Vehicular'){
-        $query2 = "SELECT * FROM tblincidentlist WHERE incident = 'Vehicular'";
-        $result2 = $conn->query($query2);
-    }elseif($state=='BigWaves'){
-        $query2 = "SELECT * FROM tblincidentlist WHERE incident = 'BigWaves'";
-        $result2 = $conn->query($query2);
-    }elseif($state=='Others'){
-        $query2 = "SELECT * FROM tblincidentlist WHERE incident = 'Others'";
-        $result2 = $conn->query($query2);
-    }else{
-        $query2 = "SELECT * FROM tblincidentlist";
-        $result2 = $conn->query($query2);
-    }
-    
-    $incidentlist = array();
-    while($row = $result2->fetch_assoc()){
-        $incidentlist[] = $row; 
-    }
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -139,79 +72,79 @@
 															<td><a href="incident_data_apopong.php?state=apopong">Apopong</td></a>
                                                         </tr>
                                                         <tr>
-                                                            <td><a href="incident_data_bula.php">Bula</td></a>
+                                                            <td><a href="incident_data_bula.php?state=bula">Bula</td></a>
                                                         </tr>
                                                         <tr>
-                                                            <td><a href="incident_data_batomelong.php">Batomelong</td></a>
+                                                            <td><a href="incident_data_batomelong.php?state=batomelong">Batomelong</td></a>
                                                         </tr>
                                                         <tr>
-                                                            <td><a href="incident_data_baluan.php">Baluan</td></a>
+                                                            <td><a href="incident_data_baluan.php?state=baluan">Baluan</td></a>
                                                         </tr>
                                                         <tr>
-                                                            <td><a href="incident_data_buayan.php">Buayan</td></a>
+                                                            <td><a href="incident_data_buayan.php?state=buayan">Buayan</td></a>
                                                         </tr>
                                                         <tr>
-                                                            <td><a href="incident_data_calumpang.php">Calumpang</td></a>
+                                                            <td><a href="incident_data_calumpang.php?state=calumpang">Calumpang</td></a>
                                                         </tr>
                                                         <tr>
-                                                            <td><a href="incident_data_cityheights.php">City Heights</td></a>
+                                                            <td><a href="incident_data_cityheights.php?state=cityheights">City Heights</td></a>
                                                         </tr>
                                                         <tr>
-                                                            <td><a href="incident_data_conel.php">Conel</td></a>
+                                                            <td><a href="incident_data_conel.php?state=conel">Conel</td></a>
                                                         </tr>
                                                         <tr>
-                                                            <td><a href="incident_data_dadeast.php">Dadiangas East</td></a>
+                                                            <td><a href="incident_data_dadeast.php?state=dadeast">Dadiangas East</td></a>
                                                         </tr>
                                                         <tr>
-                                                            <td><a href="incident_data_dadnorth.php">Dadiangas North</td></a>
+                                                            <td><a href="incident_data_dadnorth.php?state=dadnorth">Dadiangas North</td></a>
                                                         </tr>
                                                         <tr>
-                                                            <td><a href="incident_data_dadsouth.php">Dadiangas South</td></a>
+                                                            <td><a href="incident_data_dadsouth.php?state=dadsouth">Dadiangas South</td></a>
                                                         </tr>
                                                         <tr>
-                                                            <td><a href="incident_data_dadwest.php">Dadiangas West</td></a>
+                                                            <td><a href="incident_data_dadwest.php?state=dadwest">Dadiangas West</td></a>
                                                         </tr>
                                                         <tr>
-                                                            <td><a href="incident_data_katangawan.php">Katangawan</td></a>
+                                                            <td><a href="incident_data_katangawan.php?state=katangawan">Katangawan</td></a>
                                                         </tr>
                                                         <tr>
-                                                            <td><a href="incident_data_labangal.php">Labangal</td></a>
+                                                            <td><a href="incident_data_labangal.php?state=labangal">Labangal</td></a>
                                                         </tr>
                                                         <tr>
-                                                            <td><a href="incident_data_lagao.php">Lagao</td></a>
+                                                            <td><a href="incident_data_lagao.php?state=lagao">Lagao</td></a>
                                                         </tr>
                                                         <tr>
-                                                            <td><a href="incident_data_ligaya.php">Ligaya</td></a>
+                                                            <td><a href="incident_data_ligaya.php?state=ligaya">Ligaya</td></a>
                                                         </tr>
                                                         <tr>
-                                                            <td><a href="incident_data_mabuhay.php">Mabuhay</td></a>
+                                                            <td><a href="incident_data_mabuhay.php?state=mabuhay">Mabuhay</td></a>
                                                         </tr>
                                                         <tr>
-                                                            <td><a href="incident_data_olympog.php">Olympog</td></a>
+                                                            <td><a href="incident_data_olympog.php?state=olympog">Olympog</td></a>
                                                         </tr>
                                                         <tr>
-                                                            <td><a href="incident_data_sanisidro.php">San Isidro</td></a>
+                                                            <td><a href="incident_data_sanisidro.php?state=sanisidro">San Isidro</td></a>
                                                         </tr>
                                                         <tr>
-                                                            <td><a href="incident_data_sanjose.php">San Jose</td></a>
+                                                            <td><a href="incident_data_sanjose.php?state=sanjose">San Jose</td></a>
                                                         </tr>
                                                         <tr>
-                                                            <td><a href="incident_data_siguel.php">Siguel</td></a>
+                                                            <td><a href="incident_data_siguel.php?state=siguel">Siguel</td></a>
                                                         </tr>
                                                         <tr>
-                                                            <td><a href="incident_data_sinawal.php">Sinawal</td></a>
+                                                            <td><a href="incident_data_sinawal.php?state=sinawal">Sinawal</td></a>
                                                         </tr>
                                                         <tr>
-                                                            <td><a href="incident_data_tambler.php">Tambler</td></a>
+                                                            <td><a href="incident_data_tambler.php?state=tabler">Tambler</td></a>
                                                         </tr>
                                                         <tr>
-                                                            <td><a href="incident_data_tinagacan.php">Tinagacan</td></a>
+                                                            <td><a href="incident_data_tinagacan.php?state=tinagacan">Tinagacan</td></a>
                                                         </tr>
                                                         <tr>
-                                                            <td><a href="incident_data_upperlabay.php">Upper Labay</td></a>
+                                                            <td><a href="incident_data_upperlabay.php?state=upperlabay">Upper Labay</td></a>
 														</tr>
                                                         <tr>
-                                                            <td><a href="incident_data_all.php">ALL</td></a>
+                                                            <td><a href="incident_data_all.php?state=all">ALL</td></a>
 														</tr>
 												<?php else: ?>
 													<tr>

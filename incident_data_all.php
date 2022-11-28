@@ -1,18 +1,263 @@
 <?php include 'server/server.php' ?>
 <?php 
 
-if($state=='Apopong'){
-    $query = "SELECT * FROM tblincidentlist WHERE barangay = 'Apopong'";
-    $result = $conn->query($query);
-}else{
-    $query = "SELECT * FROM tblincident";
-    $result = $conn->query($query);
-}
+    $state = $_GET['state'];
+    
+    if($state=='Apopong'){
+        $query = "SELECT * FROM tblincidentlist WHERE barangay = 'Apopong'";
+        $result = $conn->query($query);
+    }else{
+        $query = "SELECT * FROM tblincident";
+        $result = $conn->query($query);
+    }
+	
+    $incident = array();
+	while($row = $result->fetch_assoc()){
+		$incident[] = $row; 
+	}
 
-$incident = array();
-while($row = $result->fetch_assoc()){
-    $incident[] = $row; 
-}
+    $query1 = "SELECT * FROM tblbarangay ORDER BY `name`";
+    $result1 = $conn->query($query1);
+
+    $br = array();
+    while($row = $result1->fetch_assoc()){
+        $br[] = $row; 
+    }
+
+    if($state=='fireapopong'){
+        $query2 = "SELECT * FROM tblincident WHERE barangay = 'Apopong' AND incident = 'Fire'";
+        $result2 = $conn->query($query2);
+    }elseif($state=='firebula'){
+        $query2 = "SELECT * FROM tblincident WHERE barangay = 'Bula' AND incident = 'Fire'";
+        $result2 = $conn->query($query2);
+    }elseif($state=='firebatomelong'){
+        $query2 = "SELECT * FROM tblincident WHERE barangay = 'batomelong' AND incident = 'Fire'";
+        $result2 = $conn->query($query2);
+    }elseif($state=='firebaluan'){
+        $query2 = "SELECT * FROM tblincident WHERE barangay = 'baluan' AND incident = 'Fire'";
+        $result2 = $conn->query($query2);
+    }elseif($state=='firebuayan'){
+        $query2 = "SELECT * FROM tblincident WHERE barangay = 'buayan' AND incident = 'Fire'";
+        $result2 = $conn->query($query2);
+    }elseif($state=='firecalumpang'){
+        $query2 = "SELECT * FROM tblincident WHERE barangay = 'calumpang' AND incident = 'Fire'";
+        $result2 = $conn->query($query2);
+    }elseif($state=='firecityheights'){
+        $query2 = "SELECT * FROM tblincident WHERE barangay = 'cityheights' AND incident = 'Fire'";
+        $result2 = $conn->query($query2);
+    }elseif($state=='fireconel'){
+        $query2 = "SELECT * FROM tblincident WHERE barangay = 'conel' AND incident = 'Fire'";
+        $result2 = $conn->query($query2);
+    }elseif($state=='firedadeast'){
+        $query2 = "SELECT * FROM tblincident WHERE barangay = 'dadeast' AND incident = 'Fire'";
+        $result2 = $conn->query($query2);
+    }elseif($state=='firedadnorth'){
+        $query2 = "SELECT * FROM tblincident WHERE barangay = 'dadnorth' AND incident = 'Fire'";
+        $result2 = $conn->query($query2);
+    }elseif($state=='firedadsouth'){
+        $query2 = "SELECT * FROM tblincident WHERE barangay = 'dadsouth' AND incident = 'Fire'";
+        $result2 = $conn->query($query2);
+    }elseif($state=='firedadwest'){
+        $query2 = "SELECT * FROM tblincident WHERE barangay = 'dadwest' AND incident = 'Fire'";
+        $result2 = $conn->query($query2);
+    }elseif($state=='firekatangawan'){
+        $query2 = "SELECT * FROM tblincident WHERE barangay = 'katangawan' AND incident = 'Fire'";
+        $result2 = $conn->query($query2);
+    }elseif($state=='firelabangal'){
+        $query2 = "SELECT * FROM tblincident WHERE barangay = 'labangal' AND incident = 'Fire'";
+        $result2 = $conn->query($query2);
+    }elseif($state=='firelagao'){
+        $query2 = "SELECT * FROM tblincident WHERE barangay = 'lagao' AND incident = 'Fire'";
+        $result2 = $conn->query($query2);
+    }elseif($state=='fireligaya'){
+        $query2 = "SELECT * FROM tblincident WHERE barangay = 'ligaya' AND incident = 'Fire'";
+        $result2 = $conn->query($query2);
+    }elseif($state=='firemabuhay'){
+        $query2 = "SELECT * FROM tblincident WHERE barangay = 'mabuhay' AND incident = 'Fire'";
+        $result2 = $conn->query($query2);
+    }elseif($state=='fireolympog'){
+        $query2 = "SELECT * FROM tblincident WHERE barangay = 'olympog' AND incident = 'Fire'";
+        $result2 = $conn->query($query2);
+    }elseif($state=='firesanisidro'){
+        $query2 = "SELECT * FROM tblincident WHERE barangay = 'sanisidro' AND incident = 'Fire'";
+        $result2 = $conn->query($query2);
+    }elseif($state=='firesanjose'){
+        $query2 = "SELECT * FROM tblincident WHERE barangay = 'sanjose' AND incident = 'Fire'";
+        $result2 = $conn->query($query2);
+    }elseif($state=='firesiguel'){
+        $query2 = "SELECT * FROM tblincident WHERE barangay = 'siguel' AND incident = 'Fire'";
+        $result2 = $conn->query($query2);
+    }elseif($state=='firesinawal'){
+        $query2 = "SELECT * FROM tblincident WHERE barangay = 'sinawal' AND incident = 'Fire'";
+        $result2 = $conn->query($query2);
+    }elseif($state=='firetambler'){
+        $query2 = "SELECT * FROM tblincident WHERE barangay = 'tambler' AND incident = 'Fire'";
+        $result2 = $conn->query($query2);
+    }elseif($state=='firetinagacan'){
+        $query2 = "SELECT * FROM tblincident WHERE barangay = 'tinagacan' AND incident = 'Fire'";
+        $result2 = $conn->query($query2);
+    }elseif($state=='fireupperlabay'){
+        $query2 = "SELECT * FROM tblincident WHERE barangay = 'upperlabay' AND incident = 'Fire'";
+        $result2 = $conn->query($query2);
+    }elseif($state=='floodapopong'){
+        $query2 = "SELECT * FROM tblincident WHERE barangay = 'Apopong' AND incident = 'Flood'";
+        $result2 = $conn->query($query2);
+    }elseif($state=='floodbula'){
+        $query2 = "SELECT * FROM tblincident WHERE barangay = 'Bula' AND incident = 'Flood'";
+        $result2 = $conn->query($query2);
+    }elseif($state=='floodbatomelong'){
+        $query2 = "SELECT * FROM tblincident WHERE barangay = 'batomelong' AND incident = 'Flood'";
+        $result2 = $conn->query($query2);
+    }elseif($state=='floodbaluan'){
+        $query2 = "SELECT * FROM tblincident WHERE barangay = 'baluan' AND incident = 'Flood'";
+        $result2 = $conn->query($query2);
+    }elseif($state=='floodbuayan'){
+        $query2 = "SELECT * FROM tblincident WHERE barangay = 'buayan' AND incident = 'Flood'";
+        $result2 = $conn->query($query2);
+    }elseif($state=='floodcalumpang'){
+        $query2 = "SELECT * FROM tblincident WHERE barangay = 'calumpang' AND incident = 'Flood'";
+        $result2 = $conn->query($query2);
+    }elseif($state=='floodcityheights'){
+        $query2 = "SELECT * FROM tblincident WHERE barangay = 'cityheights' AND incident = 'Flood'";
+        $result2 = $conn->query($query2);
+    }elseif($state=='floodconel'){
+        $query2 = "SELECT * FROM tblincident WHERE barangay = 'conel' AND incident = 'Flood'";
+        $result2 = $conn->query($query2);
+    }elseif($state=='flooddadeast'){
+        $query2 = "SELECT * FROM tblincident WHERE barangay = 'dadeast' AND incident = 'Flood'";
+        $result2 = $conn->query($query2);
+    }elseif($state=='flooddadnorth'){
+        $query2 = "SELECT * FROM tblincident WHERE barangay = 'dadnorth' AND incident = 'Flood'";
+        $result2 = $conn->query($query2);
+    }elseif($state=='flooddadsouth'){
+        $query2 = "SELECT * FROM tblincident WHERE barangay = 'dadsouth' AND incident = 'Flood'";
+        $result2 = $conn->query($query2);
+    }elseif($state=='flooddadwest'){
+        $query2 = "SELECT * FROM tblincident WHERE barangay = 'dadwest' AND incident = 'Flood'";
+        $result2 = $conn->query($query2);
+    }elseif($state=='floodkatangawan'){
+        $query2 = "SELECT * FROM tblincident WHERE barangay = 'katangawan' AND incident = 'Flood'";
+        $result2 = $conn->query($query2);
+    }elseif($state=='floodlabangal'){
+        $query2 = "SELECT * FROM tblincident WHERE barangay = 'labangal' AND incident = 'Flood'";
+        $result2 = $conn->query($query2);
+    }elseif($state=='floodlagao'){
+        $query2 = "SELECT * FROM tblincident WHERE barangay = 'lagao' AND incident = 'Flood'";
+        $result2 = $conn->query($query2);
+    }elseif($state=='floodligaya'){
+        $query2 = "SELECT * FROM tblincident WHERE barangay = 'ligaya' AND incident = 'Flood'";
+        $result2 = $conn->query($query2);
+    }elseif($state=='floodmabuhay'){
+        $query2 = "SELECT * FROM tblincident WHERE barangay = 'mabuhay' AND incident = 'Flood'";
+        $result2 = $conn->query($query2);
+    }elseif($state=='floodolympog'){
+        $query2 = "SELECT * FROM tblincident WHERE barangay = 'olympog' AND incident = 'Flood'";
+        $result2 = $conn->query($query2);
+    }elseif($state=='floodsanisidro'){
+        $query2 = "SELECT * FROM tblincident WHERE barangay = 'sanisidro' AND incident = 'Flood'";
+        $result2 = $conn->query($query2);
+    }elseif($state=='floodsanjose'){
+        $query2 = "SELECT * FROM tblincident WHERE barangay = 'sanjose' AND incident = 'Flood'";
+        $result2 = $conn->query($query2);
+    }elseif($state=='floodsiguel'){
+        $query2 = "SELECT * FROM tblincident WHERE barangay = 'siguel' AND incident = 'Flood'";
+        $result2 = $conn->query($query2);
+    }elseif($state=='floodsinawal'){
+        $query2 = "SELECT * FROM tblincident WHERE barangay = 'sinawal' AND incident = 'Flood'";
+        $result2 = $conn->query($query2);
+    }elseif($state=='floodtambler'){
+        $query2 = "SELECT * FROM tblincident WHERE barangay = 'tambler' AND incident = 'Flood'";
+        $result2 = $conn->query($query2);
+    }elseif($state=='floodtinagacan'){
+        $query2 = "SELECT * FROM tblincident WHERE barangay = 'tinagacan' AND incident = 'Flood'";
+        $result2 = $conn->query($query2);
+    }elseif($state=='floodupperlabay'){
+        $query2 = "SELECT * FROM tblincident WHERE barangay = 'upperlabay' AND incident = 'Flood'";
+        $result2 = $conn->query($query2);
+    }elseif($state=='landslideapopong'){
+        $query2 = "SELECT * FROM tblincident WHERE barangay = 'Apopong' AND incident = 'Landslide'";
+        $result2 = $conn->query($query2);
+    }elseif($state=='landslidebula'){
+        $query2 = "SELECT * FROM tblincident WHERE barangay = 'Bula' AND incident = 'Landslide'";
+        $result2 = $conn->query($query2);
+    }elseif($state=='landslidebatomelong'){
+        $query2 = "SELECT * FROM tblincident WHERE barangay = 'batomelong' AND incident = 'Landslide'";
+        $result2 = $conn->query($query2);
+    }elseif($state=='landslidebaluan'){
+        $query2 = "SELECT * FROM tblincident WHERE barangay = 'baluan' AND incident = 'Landslide'";
+        $result2 = $conn->query($query2);
+    }elseif($state=='landslidebuayan'){
+        $query2 = "SELECT * FROM tblincident WHERE barangay = 'buayan' AND incident = 'Landslide'";
+        $result2 = $conn->query($query2);
+    }elseif($state=='landslidecalumpang'){
+        $query2 = "SELECT * FROM tblincident WHERE barangay = 'calumpang' AND incident = 'Landslide'";
+        $result2 = $conn->query($query2);
+    }elseif($state=='landslidecityheights'){
+        $query2 = "SELECT * FROM tblincident WHERE barangay = 'cityheights' AND incident = 'Landslide'";
+        $result2 = $conn->query($query2);
+    }elseif($state=='landslideconel'){
+        $query2 = "SELECT * FROM tblincident WHERE barangay = 'conel' AND incident = 'Landslide'";
+        $result2 = $conn->query($query2);
+    }elseif($state=='landslidedadeast'){
+        $query2 = "SELECT * FROM tblincident WHERE barangay = 'dadeast' AND incident = 'Landslide'";
+        $result2 = $conn->query($query2);
+    }elseif($state=='landslidedadnorth'){
+        $query2 = "SELECT * FROM tblincident WHERE barangay = 'dadnorth' AND incident = 'Landslide'";
+        $result2 = $conn->query($query2);
+    }elseif($state=='landslidedadsouth'){
+        $query2 = "SELECT * FROM tblincident WHERE barangay = 'dadsouth' AND incident = 'Landslide'";
+        $result2 = $conn->query($query2);
+    }elseif($state=='landslidedadwest'){
+        $query2 = "SELECT * FROM tblincident WHERE barangay = 'dadwest' AND incident = 'Landslide'";
+        $result2 = $conn->query($query2);
+    }elseif($state=='landslidekatangawan'){
+        $query2 = "SELECT * FROM tblincident WHERE barangay = 'katangawan' AND incident = 'Landslide'";
+        $result2 = $conn->query($query2);
+    }elseif($state=='landslidelabangal'){
+        $query2 = "SELECT * FROM tblincident WHERE barangay = 'labangal' AND incident = 'Landslide'";
+        $result2 = $conn->query($query2);
+    }elseif($state=='landslidelagao'){
+        $query2 = "SELECT * FROM tblincident WHERE barangay = 'lagao' AND incident = 'Landslide'";
+        $result2 = $conn->query($query2);
+    }elseif($state=='landslideligaya'){
+        $query2 = "SELECT * FROM tblincident WHERE barangay = 'ligaya' AND incident = 'Landslide'";
+        $result2 = $conn->query($query2);
+    }elseif($state=='landslidemabuhay'){
+        $query2 = "SELECT * FROM tblincident WHERE barangay = 'mabuhay' AND incident = 'Landslide'";
+        $result2 = $conn->query($query2);
+    }elseif($state=='landslideolympog'){
+        $query2 = "SELECT * FROM tblincident WHERE barangay = 'olympog' AND incident = 'Landslide'";
+        $result2 = $conn->query($query2);
+    }elseif($state=='landslidesanisidro'){
+        $query2 = "SELECT * FROM tblincident WHERE barangay = 'sanisidro' AND incident = 'Landslide'";
+        $result2 = $conn->query($query2);
+    }elseif($state=='landslidesanjose'){
+        $query2 = "SELECT * FROM tblincident WHERE barangay = 'sanjose' AND incident = 'Landslide'";
+        $result2 = $conn->query($query2);
+    }elseif($state=='landslidesiguel'){
+        $query2 = "SELECT * FROM tblincident WHERE barangay = 'siguel' AND incident = 'Landslide'";
+        $result2 = $conn->query($query2);
+    }elseif($state=='landslidesinawal'){
+        $query2 = "SELECT * FROM tblincident WHERE barangay = 'sinawal' AND incident = 'Landslide'";
+        $result2 = $conn->query($query2);
+    }elseif($state=='landslidetambler'){
+        $query2 = "SELECT * FROM tblincident WHERE barangay = 'tambler' AND incident = 'Landslide'";
+        $result2 = $conn->query($query2);
+    }elseif($state=='landslidetinagacan'){
+        $query2 = "SELECT * FROM tblincident WHERE barangay = 'tinagacan' AND incident = 'Landslide'";
+        $result2 = $conn->query($query2);
+    }elseif($state=='landslideupperlabay'){
+        $query2 = "SELECT * FROM tblincident WHERE barangay = 'upperlabay' AND incident = 'Landslide'";
+        $result2 = $conn->query($query2);
+    }else{
+        $query2 = "SELECT * FROM tblincident";
+        $result2 = $conn->query($query2);
+    }
+    
+    $incidentlist = array();
+    while($row = $result2->fetch_assoc()){
+        $incidentlist[] = $row; 
+    }
 
 ?>
 <!DOCTYPE html>
