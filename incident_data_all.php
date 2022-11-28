@@ -4,10 +4,10 @@
     $state = $_GET['state'];
     
     if($state=='Apopong'){
-        $query = "SELECT * FROM tblincidentlist WHERE barangay = 'Apopong'";
+        $query = "SELECT * FROM tblincidentlist WHERE barangay = 'Apopong' ORDER BY barangay";
         $result = $conn->query($query);
     }else{
-        $query = "SELECT * FROM tblincident";
+        $query = "SELECT * FROM tblincident ORDER BY barangay";
         $result = $conn->query($query);
     }
 	

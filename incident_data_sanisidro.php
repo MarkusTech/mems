@@ -7,7 +7,7 @@
         $query = "SELECT * FROM tblincidentlist WHERE barangay = 'Apopong'";
         $result = $conn->query($query);
     }else{
-        $query = "SELECT * FROM tblincident WHERE barangay = 'sanisidro'";
+        $query = "SELECT * FROM tblincident WHERE barangay = 'sanisidro' ORDER BY barangay";
         $result = $conn->query($query);
     }
 	
