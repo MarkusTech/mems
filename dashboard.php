@@ -245,85 +245,6 @@
 	$query2 = "SELECT * FROM tblincidentlist WHERE barangay = 'Upper Labay' AND incident = 'Landslide'";
 	$result2 = $conn->query($query2);
 	$LandslideUpperlabay = $result2->num_rows;
-
-	// $query2 = "SELECT * FROM tblincidentlist WHERE barangay = 'Apopong' AND incident = 'Vehicular'";
-	// $result2 = $conn->query($query2);
-	// $VehicularVehicularApopong = $result2->num_rows;
-	// $query2 = "SELECT * FROM tblincidentlist WHERE barangay = 'Baluan' AND incident = 'Vehicular'";
-	// $result2 = $conn->query($query2);
-	// $VehicularVehicularBaluan = $result2->num_rows;
-	// $query2 = "SELECT * FROM tblincidentlist WHERE barangay = 'Batomelong' AND incident = 'Vehicular'";
-	// $result2 = $conn->query($query2);
-	// $VehicularVehicularBatomelong = $result2->num_rows;
-	// $query2 = "SELECT * FROM tblincidentlist WHERE barangay = 'Buayan' AND incident = 'Vehicular'";
-	// $result2 = $conn->query($query2);
-	// $VehicularVehicularBuayan = $result2->num_rows;
-	// $query2 = "SELECT * FROM tblincidentlist WHERE barangay = 'Bula' AND incident = 'Vehicular'";
-	// $result2 = $conn->query($query2);
-	// $VehicularVehicularBula = $result2->num_rows;
-	// $query2 = "SELECT * FROM tblincidentlist WHERE barangay = 'Calumpang' AND incident = 'Vehicular'";
-	// $result2 = $conn->query($query2);
-	// $VehicularVehicularCalumpang = $result2->num_rows;
-	// $query2 = "SELECT * FROM tblincidentlist WHERE barangay = 'City Heights' AND incident = 'Vehicular'";
-	// $result2 = $conn->query($query2);
-	// $VehicularVehicularCityheights = $result2->num_rows;
-	// $query2 = "SELECT * FROM tblincidentlist WHERE barangay = 'Conel' AND incident = 'Vehicular'";
-	// $result2 = $conn->query($query2);
-	// $VehicularVehicularConel = $result2->num_rows;
-	// $query2 = "SELECT * FROM tblincidentlist WHERE barangay = 'Dadiangas East' AND incident = 'Vehicular'";
-	// $result2 = $conn->query($query2);
-	// $VehicularVehicularDadeast = $result2->num_rows;
-	// $query2 = "SELECT * FROM tblincidentlist WHERE barangay = 'Dadiangas North' AND incident = 'VehicularVehicular'";
-	// $result2 = $conn->query($query2);
-	// $VehicularVehicularDadnorth = $result2->num_rows;
-	// $query2 = "SELECT * FROM tblincidentlist WHERE barangay = 'Dadiangas South' AND incident = 'Vehicular'";
-	// $result2 = $conn->query($query2);
-	// $VehicularVehicularDadsouth = $result2->num_rows;
-	// $query2 = "SELECT * FROM tblincidentlist WHERE barangay = 'Dadiangas West' AND incident = 'Vehicular'";
-	// $result2 = $conn->query($query2);
-	// $VehicularVehicularDadwest = $result2->num_rows;
-	// $query2 = "SELECT * FROM tblincidentlist WHERE barangay = 'Fatima' AND incident = 'Vehicular'";
-	// $result2 = $conn->query($query2);
-	// $VehicularVehicularFatima = $result2->num_rows;
-	// $query2 = "SELECT * FROM tblincidentlist WHERE barangay = 'Katangawan' AND incident = 'Vehicular'";
-	// $result2 = $conn->query($query2);
-	// $VehicularVehicularKatangawan = $result2->num_rows;
-	// $query2 = "SELECT * FROM tblincidentlist WHERE barangay = 'Labangal' AND incident = 'Vehicular'";
-	// $result2 = $conn->query($query2);
-	// $VehicularVehicularLabangal = $result2->num_rows;
-	// $query2 = "SELECT * FROM tblincidentlist WHERE barangay = 'Lagao' AND incident = 'Vehicular'";
-	// $result2 = $conn->query($query2);
-	// $VehicularVehicularLagao = $result2->num_rows;
-	// $query2 = "SELECT * FROM tblincidentlist WHERE barangay = 'Ligaya' AND incident = 'Vehicular";
-	// $result2 = $conn->query($query2);
-	// $VehicularLigaya = $result2->num_rows;
-	// $query2 = "SELECT * FROM tblincidentlist WHERE barangay = 'Mabuhay' AND incident = 'Vehicular'";
-	// $result2 = $conn->query($query2);
-	// $VehicularVehicularMabuhay = $result2->num_rows;
-	// $query2 = "SELECT * FROM tblincidentlist WHERE barangay = 'Olympog' AND incident = 'Vehicular'";
-	// $result2 = $conn->query($query2);
-	// $VehicularVehicularOlympog = $result2->num_rows;
-	// $query2 = "SELECT * FROM tblincidentlist WHERE barangay = 'San Isidro' AND incident = 'Vehicular'";
-	// $result2 = $conn->query($query2);
-	// $VehicularVehicularSanisidro = $result2->num_rows;
-	// $query2 = "SELECT * FROM tblincidentlist WHERE barangay = 'San Jose' AND incident = 'Vehicular'";
-	// $result2 = $conn->query($query2);
-	// $VehicularVehicularSanjose = $result2->num_rows;
-	// $query2 = "SELECT * FROM tblincidentlist WHERE barangay = 'Siguel' AND incident = 'Vehicular'";
-	// $result2 = $conn->query($query2);
-	// $VehicularVehicularSiguel = $result2->num_rows;
-	// $query2 = "SELECT * FROM tblincidentlist WHERE barangay = 'Sinawal' AND incident = 'Vehicular'";
-	// $result2 = $conn->query($query2);
-	// $VehicularVehicularSinawal = $result2->num_rows;
-	// $query2 = "SELECT * FROM tblincidentlist WHERE barangay = 'Tambler' AND incident = 'Vehicular'";
-	// $result2 = $conn->query($query2);
-	// $VehicularVehicularTambler = $result2->num_rows;
-	// $query2 = "SELECT * FROM tblincidentlist WHERE barangay = 'Tinagacan' AND incident = 'Vehicular'";
-	// $result2 = $conn->query($query2);
-	// $VehicularVehicularTinagacan = $result2->num_rows;
-	// $query2 = "SELECT * FROM tblincidentlist WHERE barangay = 'Upper Labay' AND incident = 'Vehicular'";
-	// $result2 = $conn->query($query2);
-	// $VehicularVehicularUpperlabay = $result2->num_rows;
 ?>
 
 <!DOCTYPE html>
@@ -420,7 +341,6 @@
 							</div>
 						</div>
 					</div>
-					
 					<div>
   						<canvas id="myChart2"></canvas>
 					</div>
@@ -499,11 +419,7 @@
 							</div>
 						</div>
 					</div>
-
-					
 				</div>
-
-				
 				<!-- Main Footer -->
 			<?php include 'templates/main-footer.php' ?>
 			<!-- End Main Footer -->
