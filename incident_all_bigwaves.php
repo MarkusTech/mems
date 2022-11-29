@@ -566,7 +566,7 @@
 															<?php if(isset($_SESSION['username'])):?>
 																<td>
                                                                 <?php if($_SESSION['role']=='administrator' || $_SESSION['role']=='staff'):?>
-																	<a type="button" data-toggle="tooltip" href="model/remove_incident.php?id=<?= $row['id'] ?>" onclick="return confirm('Are you sure you want to delete this incident?');" class="btn btn-link btn-danger" data-original-title="Remove">
+																	<a type="button" data-toggle="tooltip" href="model/remove_incidents.php?id=<?= $row['id'] ?>" onclick="return confirm('Are you sure you want to delete this incident?');" class="btn btn-link btn-danger" data-original-title="Remove">
 																		<i class="fa fa-times"></i>
 																	<?php endif ?>
 																</td>
