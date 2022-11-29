@@ -8,6 +8,7 @@
         $result = $conn->query($query);
     }else{
         $query = "SELECT * FROM tblincident WHERE barangay = 'siguel' ORDER BY barangay";
+        $result = $conn->query($query);
     }
 	
     $incident = array();
