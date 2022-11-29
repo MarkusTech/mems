@@ -534,13 +534,13 @@
 													<th scope="col">H. Status</th>
 													<th scope="col">Barangay</th>
                                                     <th scope="col">Incident</th>
-                                                    <?php if($_SESSION['role']=='administrator'):?>
+                                                    <?php if($_SESSION['role']=='administrator' || $_SESSION['role']=='staff'):?>
 														<th>Action</th>
 													<?php endif?>
 												</tr>
 											</thead>
 
-                                            <?php if($_SESSION['role']=='administrator'):?>
+                                            <?php if($_SESSION['role']=='administrator' || $_SESSION['role']=='staff'):?>
 											<tbody>
 												<?php if(!empty($incident)): ?>
 													<?php foreach($incident as $row): ?>

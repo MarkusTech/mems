@@ -66,7 +66,7 @@
 												</tr>
 											</thead>
 
-                                            <?php if($_SESSION['role']=='administrator'):?>
+                                            <?php if($_SESSION['role']=='administrator' || $_SESSION['role']=='staff'):?>
 											<tbody>     
                                                         <tr>
                                                             <td><a href="incident_data_all.php?state=all">ALL</td></a>
