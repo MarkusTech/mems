@@ -24,6 +24,6 @@
         }
 	}
 
-    header("Location: ../vapplication.php?sort_confirmation=all");
+    header("Location: ../volunteer_portal.php");
 	$conn->close();
 

@@ -118,27 +118,20 @@ function editResident(that){
 
 
 function editBlotter1(that){
-    id          = $(that).attr('data-id');
-    complainant         = $(that).attr('data-complainant');
-    respondent 		= $(that).attr('data-respondent');
-	victim 		= $(that).attr('data-victim');
-    type 		= $(that).attr('data-type');
-	l 		= $(that).attr('data-l');
-    date 	    = $(that).attr('data-date');
-	time 		= $(that).attr('data-time');
+    id              = $(that).attr('data-id');
+    fullname        = $(that).attr('data-fullname');
+    address 		= $(that).attr('data-address');
+	age 		    = $(that).attr('data-age');
+    contact 		= $(that).attr('data-contact');
     details 		= $(that).attr('data-details');
-    status 	= $(that).attr('data-status');
 
-    $('#blotter_id').val(id);
-    $('#complainant').val(complainant);
-    $('#respondent').val(respondent);
-    $('#victim').val(victim);
-    $('#type').val(type);
-    $('#location').val(l);
-    $('#date').val(date);
-    $('#time').val(time);
+    $('#id').val(id);
+    $('#fullname').val(fullname);
+    $('#address').val(address);
+    $('#age').val(age);
+    $('#contact').val(contact);
     $('#details').val(details);
-    $('#status').val(status);
+    
 }
 
 $('.status').change(function(){

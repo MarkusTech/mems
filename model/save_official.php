@@ -11,10 +11,11 @@
     $address = $conn->real_escape_string($_POST['address']);
     $age    = $conn->real_escape_string($_POST['age']);
     $contact    = $conn->real_escape_string($_POST['contact']);
+    $details    = $conn->real_escape_string($_POST['details']);
 
     if(!empty($fname) && !empty($address) && !empty($age) && !empty($contact)){
 
-        $insert  = "INSERT INTO tblreg (fullname, address, age, contact, status, confirmation) VALUES ('$fname', '$address','$age', '$contact', 'Active', 'Not Confirmed')";
+        $insert  = "INSERT INTO tblreg (fullname, address, age, contact, status, confirmation, details) VALUES ('$fname', '$address','$age', '$contact', 'Active', 'Not Confirmed','$details')";
         $result  = $conn->query($insert);
 
         if($result === true){
@@ -32,6 +33,6 @@
         $_SESSION['success'] = 'danger';
     }
 
-    header("Location: ../officials.php");
+    header("Location: ../vapplication.php");
 
     $conn->close();

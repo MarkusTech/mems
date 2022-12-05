@@ -531,6 +531,7 @@
 										<table class="table table-striped">
 											<thead>
 												<tr>
+                                                    <th scope="col">HH/MEMBERS</th>
 													<th scope="col">First Name</th>
 													<th scope="col">Middle Name</th>
 													<th scope="col">Last Name</th>
@@ -548,6 +549,7 @@
 													<th scope="col">Amount Damage</th>
 													<th scope="col">H. Status</th>
 													<th scope="col">Barangay</th>
+                                                    <th scope="col">Incident</th>
                                                     <?php if($_SESSION['role']=='administrator' || $_SESSION['role']=='staff'):?>
 														<th>Action</th>
 													<?php endif?>
@@ -556,9 +558,10 @@
 
                                             <?php if($_SESSION['role']=='administrator' || $_SESSION['role']=='staff'):?>
 											<tbody>
-												<?php if(!empty($incidentlist)): ?>
-													<?php foreach($incidentlist as $row): ?>
+												<?php if(!empty($incident)): ?>
+													<?php foreach($incident as $row): ?>
 														<tr>
+                                                            <td><?= $row['members'] ?></td>
 															<td><?= $row['firstname'] ?></td>
 															<td><?= $row['middlename'] ?></td>
                                                             <td><?= $row['lastname'] ?></td>
@@ -576,9 +579,10 @@
 															<td><?= $row['amountdamage'] ?></td>
 															<td><?= $row['housingstatus'] ?></td>
 															<td><?= $row['barangay'] ?></td>
+                                                            <td><?= $row['incident'] ?></td>
 															<?php if(isset($_SESSION['username'])):?>
 																<td>
-                                                                <?php if($_SESSION['role']=='administrator' || $_SESSION['role']=='staff'):?>
+                                                                <?php if($_SESSION['role']=='administrator'):?>
 																	<a type="button" data-toggle="tooltip" href="model/remove_incident.php?id=<?= $row['id'] ?>" onclick="return confirm('Are you sure you want to delete this incident?');" class="btn btn-link btn-danger" data-original-title="Remove">
 																		<i class="fa fa-times"></i>
 																	<?php endif ?>
@@ -621,11 +625,7 @@
                                         <div class="col">
                                             <div class="form-group">
                                                 <label>HH-MEMBERS: *</label>
-                                                <select class="form-control" required name="members">
-                                                    <option disabled selected value="">Select HouseHold/MEMBERS</option>
-                                                    <option value="H">H</option>
-                                                    <option value="M">M</option>
-                                                </select>
+                                                <input type="text" class="form-control" placeholder="Enter HouseHold/Members" name="members" required>
                                             </div>
                                         </div>
                                     </div>

@@ -604,15 +604,11 @@
                             <input type="hidden" name="size" value="1000000">
                             <div class="row">
                                 <div class="col-md-11">
-                                    <div class="row">
+                                <div class="row">
                                         <div class="col">
                                             <div class="form-group">
                                                 <label>HH-MEMBERS: *</label>
-                                                <select class="form-control" required name="members">
-                                                    <option disabled selected value="">Select HouseHold/MEMBERS</option>
-                                                    <option value="H">H</option>
-                                                    <option value="M">M</option>
-                                                </select>
+                                                <input type="text" class="form-control" placeholder="Enter HouseHold/Members" name="members" required>
                                             </div>
                                         </div>
                                     </div>
