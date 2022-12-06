@@ -80,10 +80,10 @@
                                         <div class="card-title">INCIDENT LIST</div>
                                         <?php if(isset($_SESSION['username'])): ?>
                                         <div class="card-tools">
-                                            <!-- <a href="#add" data-toggle="modal" class="btn btn-info btn-border btn-round btn-sm">
+                                            <a href="#add" data-toggle="modal" class="btn btn-info btn-border btn-round btn-sm">
                                                 <i class="fa fa-plus"></i>
-                                                Incident
-                                            </a> -->
+                                                Chart
+                                            </a>
                                         <?php endif ?>
                                     </div>
                                 </div>
@@ -144,7 +144,7 @@
 			</div>
 			
 			<!-- Modal -->
-            <!-- <div class="modal fade" id="add" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" id="add" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -154,33 +154,31 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                            <form method="POST" action="model/save_incident.php" enctype="multipart/form-data">
+                            <form method="POST" action="model/save_fire_data.php" enctype="multipart/form-data">
 							
-                                <div class="form-group">
-                                    <label>Date: *</label>
-                                    <input type="date" class="form-control" name="ddate" required>
+								<div class="form-group">
+                                    <label>date: *</label>
+                                    <input type="text" class="form-control" placeholder="Enter Location" name="date" required>
                                 </div>
                                 <div class="form-group">
-									<label for="cars">Barangay: *</label>
-									<select class="form-control" id="barangay" name="barangay" required>
-                                        <option disabled selected>Select Barangay</option>
-                                            <?php foreach($br as $row):?>
-                                        <option value="<?= ucwords($row['name']) ?>"><?= $row['name'] ?></option>
-                                            <?php endforeach ?>
-                                    </select>
-								</div>
-                                <div class="form-group">
-                                    <label>Incident: *</label>
-                                        <select class="form-control" name="incident">
-                                            <option disabled selected value="">Select Incident</option>
-                                            <option value="Fire">Fire incident</option>
-                                            <option value="Flood">Flood incident</option>
-                                            <option value="Landslide">Landslide incident</option>
-                                        </select>
+                                    <label>Fire Incident </label>
+                                    <input type="number" class="form-control" placeholder="0" name="fire">
+                                </div>
+								<div class="form-group">
+                                    <label>Flood Incident </label>
+                                    <input type="number" class="form-control" placeholder="0" name="flood">
                                 </div>
                                 <div class="form-group">
-                                    <label>Location: *</label>
-                                    <input type="text" class="form-control" placeholder="Enter Location" name="location" required>
+                                    <label>Landslide Incident </label>
+                                    <input type="number" class="form-control" placeholder="0" name="landslide">
+                                </div>
+								<div class="form-group">
+                                    <label>Vehicular Accident </label>
+                                    <input type="number" class="form-control" placeholder="0" name="Vehicular">
+                                </div>
+								<div class="form-group">
+                                    <label>Big Waves </label>
+                                    <input type="number" class="form-control" placeholder="0" name="bigwaves">
                                 </div>
                         </div>
                         <div class="modal-footer">
@@ -190,7 +188,7 @@
                         </form>
                     </div>
                 </div>
-            </div> -->
+            </div>
 			
 			<!-- Main Footer -->
 			<?php include 'templates/main-footer.php' ?>
