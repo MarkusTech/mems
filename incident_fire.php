@@ -174,7 +174,7 @@
                                 </div>
 								<div class="form-group">
                                     <label>Vehicular Accident </label>
-                                    <input type="number" class="form-control" placeholder="0" name="Vehicular">
+                                    <input type="number" class="form-control" placeholder="0" name="vehicular">
                                 </div>
 								<div class="form-group">
                                     <label>Big Waves </label>
