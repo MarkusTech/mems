@@ -116,17 +116,16 @@
 															<td><?= $row['location'] ?></td>
 															<?php if(isset($_SESSION['username'])):?>
 																<td>
-																	<?php if($_SESSION['role']=='administrator' || $_SESSION['role']=='staff'):?>
-																	<a type="button" data-toggle="tooltip" href="model/remove_incident.php?id=<?= $row['id'] ?>" onclick="return confirm('Are you sure you want to delete this incident?');" class="btn btn-link btn-danger" data-original-title="Remove">
+																<?php if($_SESSION['role']=='administrator' || $_SESSION['role']=='staff'):?>
+																	<a type="button" data-toggle="tooltip" href="model/remove_incidents.php?id=<?= $row['id'] ?>" onclick="return confirm('Are you sure you want to delete this incident?');" class="btn btn-link btn-danger" data-original-title="Remove">
 																		<i class="fa fa-times"></i>
 																	</a>
-																	<a type="button" data-toggle="tooltip" href="incident_data_all.php" class="btn btn-link btn-success">
+																	<?php endif ?>
+																	<a type="button" data-toggle="tooltip" href="incident_all_fire.php?state=allfire" class="btn btn-link btn-success">
 																		Profiles
 																	</a>
-																	<?php endif ?>
 																</td>
 															<?php endif?>
-															
 														</tr>
 													<?php endforeach ?>
 												<?php else: ?>

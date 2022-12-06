@@ -5,6 +5,7 @@
 <html lang="en">
 <head>
 	<?php include 'templates/header.php' ?>
+	
 	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 	<title>Dashboard -  Monitoring and Evacuation Management System</title>
 </head>
@@ -51,6 +52,7 @@
 				<div class="page-inner mt--2">
 					
 				<!-- line chart code -->
+				<?php include 'chart-line/index.php' ?>
 
 
 					
